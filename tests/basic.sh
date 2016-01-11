@@ -2,7 +2,7 @@
 set -ex
 OVPN_DATA=basic-data
 CLIENT=travis-client
-IMG=kylemanna/openvpn
+IMG=arubislander/armhf-openvpn
 
 #
 # Create a docker container with the config data

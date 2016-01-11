@@ -7,15 +7,15 @@ Random things I do to debug the containers.
 * Create a shell in the running docker container (aka namespace) with [nsenter](https://github.com/jpetazzo/nsenter)
 * If you don't have nsenter/docker-enter, you can mount the data container and modify it with
 
-        docker run --rm -it --volumes-from $OVPN_DATA kylemanna/openvpn bash -l
+        docker run --rm -it --volumes-from $OVPN_DATA arubislander/armhf-openvpn bash -l
 
 ## Stream OpenVPN Logs
 
 1. Get the container's name or container ID:
 
         root@vpn:~/docker-openvpn# docker ps
-        CONTAINER ID        IMAGE                      COMMAND             CREATED             STATUS              PORTS                    NAMES
-        ed335aaa9b82        kylemanna/openvpn:latest   ovpn_run            5 minutes ago       Up 5 minutes        0.0.0.0:1194->1194/udp   sad_lovelace
+        CONTAINER ID        IMAGE                               COMMAND             CREATED             STATUS              PORTS                    NAMES
+        ed335aaa9b82        arubislander/armhf-openvpn:latest   ovpn_run            5 minutes ago       Up 5 minutes        0.0.0.0:1194->1194/udp   sad_lovelace
 
 2. Tail the logs:
 
