@@ -12,10 +12,10 @@ services:
 
 before_install:
     - docker --version
-    - docker build -t kylemanna/openvpn .
-    - docker inspect kylemanna/openvpn
-    - docker run kylemanna/openvpn openvpn --version || true # why does it returns 1?
-    - docker run kylemanna/openvpn openssl version
+    - docker build -t arubislander/armhf-openvpn .
+    - docker inspect arubislander/armhf-openvpn
+    - docker run arubislander/armhf-openvpn openvpn --version || true # why does it returns 1?
+    - docker run arubislander/armhf-openvpn openssl version
 
 script:
     - pushd tests && for i in *.sh; do "./$i"; done && popd
