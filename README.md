@@ -1,6 +1,5 @@
 # OpenVPN for Docker
 
-[![Build Status](https://travis-ci.org/arubislander/docker-openvpn.svg)](https://travis-ci.org/arubislander/docker-openvpn)
 [![Docker Stars](https://img.shields.io/docker/stars/arubislander/armhf-openvpn.svg)](https://hub.docker.com/r/arubislander/armhf-openvpn/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/arubislander/armhf-openvpn.svg)](https://hub.docker.com/r/arubislander/armhf-openvpn/)
 [![ImageLayers Size](https://img.shields.io/imagelayers/image-size/arubislander/armhf-openvpn/latest.svg)](https://hub.docker.com/r/arubislander/armhf-openvpn/)
@@ -158,12 +157,3 @@ of a guarantee in the future.
   volume for re-use across containers
 * Addition of tls-auth for HMAC security
 
-## Tested On
-
-* Docker hosts:
-  * server a [Digital Ocean](https://www.digitalocean.com/?refcode=d19f7fe88c94) Droplet with 512 MB RAM running Ubuntu 14.04
-* Clients
-  * Android App OpenVPN Connect 1.1.14 (built 56)
-     * OpenVPN core 3.0 android armv7a thumb2 32-bit
-  * OS X Mavericks with Tunnelblick 3.4beta26 (build 3828) using openvpn-2.3.4
-  * ArchLinux OpenVPN pkg 2.3.4-1
