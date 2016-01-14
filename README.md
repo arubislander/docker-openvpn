@@ -7,9 +7,6 @@
 
 OpenVPN server in a Docker container complete with an EasyRSA PKI CA.
 
-Extensively tested on [Digital Ocean $5/mo node](http://bit.ly/1C7cKr3) and has
-a corresponding [Digital Ocean Community Tutorial](http://bit.ly/1AGUZkq).
-
 #### Upstream Links
 
 * Docker Registry @ [arubislander/armhf-openvpn](https://hub.docker.com/r/arubislander/armhf-openvpn/)
@@ -157,3 +154,4 @@ of a guarantee in the future.
   volume for re-use across containers
 * Addition of tls-auth for HMAC security
 
+## Differences from 
